@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>A portrait made of songs</title>
+  <meta name="description" content="A living portrait, written with the lyrics of someone's favorite songs.">
+  <meta name="theme-color" content="#0a0607">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230a0607'/%3E%3Cpath fill='%23e23a58' d='M16 26s-9.5-5.6-9.5-12.1C6.500 10.600 9 8.500 11.700 8.500c1.800 0 3.400 1 4.300 2.500.9-1.500 2.500-2.500 4.300-2.500 2.700 0 5.200 2.100 5.200 5.400C25.500 20.400 16 26 16 26z'/%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..600;1,6..96,400..600&family=Jost:wght@300..600&family=Newsreader:ital,opsz,wght@0,6..72,300..400;1,6..72,300..400&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- The living portrait. Everything else is built from config.js -->
+  <canvas id="stage" aria-hidden="true"></canvas>
+
+  <div class="veil" id="veil"><span class="veil__label" id="veil-label"></span></div>
+
+  <header class="topbar">
+    <a class="topbar__name" id="brand" href="#home"></a>
+    <nav class="chapters" id="chapters" aria-label="Chapters"></nav>
+  </header>
+
+  <main id="story"></main>
+
+  <p class="hint" id="hint" hidden></p>
+  <div class="notice" id="notice" role="alert" hidden></div>
+
+  <noscript><p class="notice">This page needs JavaScript to draw the portrait.</p></noscript>
+
+  <script src="config.js"></script>
+  <script type="module" src="assets/js/main.js"></script>
+</body>
+</html>
